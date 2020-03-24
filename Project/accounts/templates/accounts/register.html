@@ -1,0 +1,12 @@
+{%extends 'accounts/base.html'%}
+{%load crispy_forms_tags%}
+{%block content%}
+<div class="container">
+<form mathod="POST" action="" enctype="multipart/form-data">
+{%csrf_token%}
+{{form|crispy}}
+<button class="btn btn-outline-primary">Sign Up</button>
+  </form>
+  </div>
+
+{%endblock%}
